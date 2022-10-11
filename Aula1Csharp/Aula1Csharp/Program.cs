@@ -12,7 +12,7 @@ namespace Aula1Csharp
 
             //exercicio 1.2 ---------------------------
 
-            int n1, n2, soma,valor;
+            int n1, n2, soma, valor;
 
             n1 = 3;
 
