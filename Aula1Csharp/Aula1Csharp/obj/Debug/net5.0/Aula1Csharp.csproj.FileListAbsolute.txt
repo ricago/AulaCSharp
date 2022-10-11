@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\bin\Debug\net5.0\Aula1Csharp.exe
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\bin\Debug\net5.0\Aula1Csharp.deps.json
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\bin\Debug\net5.0\Aula1Csharp.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\bin\Debug\net5.0\Aula1Csharp.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\bin\Debug\net5.0\Aula1Csharp.dll
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\bin\Debug\net5.0\Aula1Csharp.pdb
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.dll
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\refint\Aula1Csharp.dll
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.pdb
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\Aula1Csharp.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Csharp\obj\Debug\net5.0\ref\Aula1Csharp.dll

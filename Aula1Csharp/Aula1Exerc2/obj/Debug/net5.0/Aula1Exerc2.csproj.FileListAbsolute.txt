@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\bin\Debug\net5.0\Aula1Exerc2.exe
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\bin\Debug\net5.0\Aula1Exerc2.deps.json
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\bin\Debug\net5.0\Aula1Exerc2.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\bin\Debug\net5.0\Aula1Exerc2.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\bin\Debug\net5.0\Aula1Exerc2.dll
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\bin\Debug\net5.0\Aula1Exerc2.pdb
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.dll
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\refint\Aula1Exerc2.dll
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.pdb
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\Aula1Exerc2.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\Aula1Csharp\Aula1Exerc2\obj\Debug\net5.0\ref\Aula1Exerc2.dll
