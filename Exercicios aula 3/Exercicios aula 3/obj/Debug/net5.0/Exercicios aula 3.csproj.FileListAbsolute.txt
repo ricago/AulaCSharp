@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\bin\Debug\net5.0\Exercicios aula 3.exe
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\bin\Debug\net5.0\Exercicios aula 3.deps.json
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\bin\Debug\net5.0\Exercicios aula 3.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\bin\Debug\net5.0\Exercicios aula 3.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\bin\Debug\net5.0\Exercicios aula 3.dll
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\bin\Debug\net5.0\Exercicios aula 3.pdb
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.dll
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\refint\Exercicios aula 3.dll
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.pdb
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\Exercicios aula 3.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\Exercicios aula 3\Exercicios aula 3\obj\Debug\net5.0\ref\Exercicios aula 3.dll
