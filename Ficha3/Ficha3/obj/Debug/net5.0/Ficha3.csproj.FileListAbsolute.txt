@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\bin\Debug\net5.0\Ficha3.exe
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\bin\Debug\net5.0\Ficha3.deps.json
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\bin\Debug\net5.0\Ficha3.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\bin\Debug\net5.0\Ficha3.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\bin\Debug\net5.0\Ficha3.dll
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\bin\Debug\net5.0\Ficha3.pdb
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.dll
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\refint\Ficha3.dll
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.pdb
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\Ficha3.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\Ficha3\Ficha3\obj\Debug\net5.0\ref\Ficha3.dll
