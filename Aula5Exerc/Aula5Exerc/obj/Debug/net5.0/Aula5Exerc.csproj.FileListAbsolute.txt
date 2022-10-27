@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\bin\Debug\net5.0\Aula5Exerc.exe
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\bin\Debug\net5.0\Aula5Exerc.deps.json
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\bin\Debug\net5.0\Aula5Exerc.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\bin\Debug\net5.0\Aula5Exerc.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\bin\Debug\net5.0\Aula5Exerc.dll
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\bin\Debug\net5.0\Aula5Exerc.pdb
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.dll
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\refint\Aula5Exerc.dll
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.pdb
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\Aula5Exerc.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\Aula5Exerc\Aula5Exerc\obj\Debug\net5.0\ref\Aula5Exerc.dll

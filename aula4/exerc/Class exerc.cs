@@ -7,13 +7,16 @@ using System.Threading.Tasks;
 namespace exerc_
 {
     internal class Veiculo
-    {
-        public string marca;
+    {   
+
+        ///*public string marca*/;
         public string modelo;
         public int ano;
+        public string cor;
+        public string estado;
         //public string veiculo;
         //private string modelo;
-        //private string marca;
+        private string marca;
         //private int ano;
 
         //public string Modelo
@@ -29,7 +32,12 @@ namespace exerc_
 
         //    set { marca = value; }
         //}
+        public string Marca
+        {
+            get;
 
+            set;
+        }
         //public int Ano
         //{
         //    get { return ano; }
@@ -37,6 +45,19 @@ namespace exerc_
         //    set { ano = value; }
         //}
 
+        //public int Cor
+        //{
+        //    get { return cor; }
+
+        //    set { cor = value; }
+        //}
+
+        //public int Estado
+        //{
+        //    get { return estado; }
+
+        //    set { estado = value; }
+        //}
 
     }
 }
