@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Aula5Exerc
 {
-    internal class Class1
+    internal class Conta
     {
         public float saldo;
-        public Class1()
+        public string titular;
+        public Conta()
         {
             Random random = new Random();
 

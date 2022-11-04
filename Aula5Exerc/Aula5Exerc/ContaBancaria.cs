@@ -8,7 +8,7 @@ namespace Aula5Exerc
         {
             int op;
 
-            Class1 conta = new Class1();
+            Conta conta = new Conta();
 
             float saldo = conta.saldo;
 

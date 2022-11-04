@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\bin\Debug\net5.0\Aula6Exerc.exe
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\bin\Debug\net5.0\Aula6Exerc.deps.json
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\bin\Debug\net5.0\Aula6Exerc.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\bin\Debug\net5.0\Aula6Exerc.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\bin\Debug\net5.0\Aula6Exerc.dll
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\bin\Debug\net5.0\Aula6Exerc.pdb
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.dll
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\refint\Aula6Exerc.dll
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.pdb
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\Aula6Exerc.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\aula6\Aula6Exerc\obj\Debug\net5.0\ref\Aula6Exerc.dll
