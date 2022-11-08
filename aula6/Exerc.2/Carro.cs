@@ -8,6 +8,11 @@ namespace Exerc._2
 {
     internal class Carro:Veiculo
     {
-        public int rodas = 4;
+        public int rodas;
+
+        public override string Display()
+        {
+            return $"Marca: {marca}, Modelo: {modelo}, Cor: {cor},Rodas: {rodas}";
+        }
     }
 }

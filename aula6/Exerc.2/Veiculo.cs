@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace Exerc._2
 {
-    internal class Veiculo
+    abstract class Veiculo
     {
-        public string cor = "azul";
-        public string matricula = "A";
+        public string cor="azul";
+        public string matricula;
         public string marca;
         public string modelo;
+
+        public virtual string Display()
+        {
+            return $" {marca}, {modelo}, {cor}";
+        }
+   
     }
+
+    
 }

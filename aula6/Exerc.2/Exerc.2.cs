@@ -11,8 +11,12 @@ namespace Exerc._2
 
             mota.marca = "Yamaha";
             carro.marca = "Fiat";
+            carro.modelo = "Punto";
+            mota.modelo = "coisa";
+            mota.cor = "verde";
+            mota.rodas = 2;
+            carro.rodas = 4;
 
-            int rodas;
             Console.WriteLine("1 - Carro");
             Console.WriteLine("2 - Mota");
 
@@ -22,11 +26,11 @@ namespace Exerc._2
             switch (op)
             {
                 case 1:
-                    Console.WriteLine("Rodas: {0}, Cor: {1}, Matricula: {2}, Marca: {3},  Modelo: {4}", carro.rodas,carro.cor,carro.marca,carro.modelo,carro.matricula);
+                    Console.WriteLine(carro.Display());
                     break;
 
                 case 2:
-                    Console.WriteLine("Rodas: {0}, Cor: {1}, Matricula: {2}, Marca: {3},  Modelo: {4}", mota.rodas, mota.cor, mota.marca, mota.modelo, mota.matricula);
+                    Console.WriteLine(mota.Display());
                     break;
             }
         }

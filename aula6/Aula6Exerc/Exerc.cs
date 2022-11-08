@@ -8,7 +8,7 @@ namespace Aula6Exerc
         {
             int op;
             //Calc calculo = new Calc();         
-            float valor1, valor2;
+            //float valor1, valor2;
             float[] resultado;
 
             Console.WriteLine("---------------Menu---------------");
@@ -69,7 +69,7 @@ namespace Aula6Exerc
             } while(op != 0 || op!= 1 || op != 2 || op != 3 || op != 4);
 
             }
-            catch(Exception e)
+            catch(Exception)
             {
                 Console.WriteLine("Digite valores validos");
             }
