@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\bin\Debug\net5.0\aula8.exe
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\bin\Debug\net5.0\aula8.deps.json
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\bin\Debug\net5.0\aula8.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\bin\Debug\net5.0\aula8.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\bin\Debug\net5.0\aula8.dll
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\bin\Debug\net5.0\aula8.pdb
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.dll
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\refint\aula8.dll
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.pdb
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\aula8.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\aula8\aula8\obj\Debug\net5.0\ref\aula8.dll

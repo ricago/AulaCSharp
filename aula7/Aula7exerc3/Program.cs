@@ -7,7 +7,7 @@ namespace Aula7exerc3
     {
         static void Main(string[] args)
         {   
-            int idade,Genero;
+            int idade,genero;
             string codPostal,nome, sobrenome,rua,andar,localidade;
 
             Pessoa pessoa = new Pessoa();
@@ -20,16 +20,19 @@ namespace Aula7exerc3
             andar = pessoa.postal.andar = 2 + "º";
             localidade = pessoa.postal.localidade = "Caldas";
             
-            Console.WriteLine("Sexo: 0-Feminino, 1-Masculino");
-            Genero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Sexo: 0-Feminino, 1-Masculino, 2-Outro");
+            genero = int.Parse(Console.ReadLine());
 
-            if (Genero == 0)
-                Genero = pessoa.genero.Feminino;
+            if (genero == (int)sexo.Feminino)
+                
 
-            if (Genero == 1)
-                Genero = pessoa.genero.Masculino;
+            if (genero == (int)sexo.Masculino)
+                
 
-            Console.WriteLine("");
+            if (genero == (int)sexo.Outro)
+                           
+
+            Console.WriteLine("Nome: {0} {1}, {2} anos, genero: {7}, localidade: {3}, {4} {5}, {6}",nome,sobrenome,idade,localidade,rua,andar,codPostal,genero);
         }
     }
 }

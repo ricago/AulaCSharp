@@ -20,16 +20,16 @@ namespace Aula7exerc3
             public string andar;
             public string localidade;
         }
-    enum sexo
+    public enum sexo
         {
-            Feminino,Masculino
+            Feminino=0,Masculino=1,Outro=2
         }
     class Pessoa
     {
         public endPostal postal;
         public Nome name;
-        public sexo genero;
+        public int sexo;
         
-    
+   
     }
 }
