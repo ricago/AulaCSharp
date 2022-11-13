@@ -12,6 +12,7 @@ namespace aula8
         public string name;
         public string sobrenome;
         public int pin;
+        public int pin2;
 
         public void Menu()
         {
@@ -66,6 +67,18 @@ namespace aula8
             pin2 = int.Parse(Console.ReadLine());
 
             return pin2;
+        }
+
+        public float deposita(ref float saldo)
+        {
+            int deposita;
+
+            Console.WriteLine("Quanto quer levantar: ");
+            deposita = int.Parse(Console.ReadLine());
+
+            saldo = saldo + deposita;
+
+            return saldo;
         }
      }
 }

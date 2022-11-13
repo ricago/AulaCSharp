@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace aula8
@@ -23,6 +24,7 @@ namespace aula8
                 conta.saldoInicial(ref conta.saldo);
                 conta.codigo(ref conta.pin);
 
+                pin2 = conta.pin2;
                 pin = conta.pin;
                 saldo = conta.saldo;
 
@@ -34,25 +36,52 @@ namespace aula8
                     switch (op)
                     {
                         case 0:
+                            //System.Environment.Exit(0);
                             break;
 
                         case 1:
-                                conta.pin2
+                            do{                               
+                                conta.digitaPin(ref pin2);
                                 Console.Clear();
-                                conta.verSaldo(ref saldo);
-                                break;
+
+                                if (pin2 == pin) {
+                                    Console.Clear();
+                                    conta.verSaldo(ref saldo);
+                                }
+
+                            } while (pin2!=pin);
+                            break;
 
                         case 2:
+                            do{
+                                conta.digitaPin(ref pin2);
                                 Console.Clear();
-                                conta.levanta(ref saldo);
-                                break;
+
+                                if (pin2 == pin)
+                                {
+                                    Console.Clear();
+                                    conta.levanta(ref saldo);
+                                }
+
+                            } while (pin2 != pin);
+                            break;
 
                         case 3:
+                            do
+                            {
+                                conta.digitaPin(ref pin2);
                                 Console.Clear();
 
-                                break;
+                                if (pin2 == pin)
+                                {
+                                    Console.Clear();
+                                    conta.deposita(ref saldo);
+                                }
+
+                            } while (pin2 != pin);
+                            break;
                     }
-                }while(op>0 || op<3);
+                }while(op>=1 || op<=3);
 
             }catch (Exception ex)
             {
