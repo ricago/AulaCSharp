@@ -27,7 +27,7 @@ namespace aula8
                 pin2 = conta.pin2;
                 pin = conta.pin;
                 saldo = conta.saldo;
-
+                
                 Console.WriteLine("Parabens {0}, criou a sua conta com sucesso",nome);
                 do {
                     conta.Menu();

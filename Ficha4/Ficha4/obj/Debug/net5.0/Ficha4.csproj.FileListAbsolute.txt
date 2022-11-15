@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\bin\Debug\net5.0\Ficha4.exe
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\bin\Debug\net5.0\Ficha4.deps.json
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\bin\Debug\net5.0\Ficha4.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\bin\Debug\net5.0\Ficha4.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\bin\Debug\net5.0\Ficha4.dll
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\bin\Debug\net5.0\Ficha4.pdb
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.dll
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\refint\Ficha4.dll
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.pdb
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\Ficha4.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\Ficha4\Ficha4\obj\Debug\net5.0\ref\Ficha4.dll
