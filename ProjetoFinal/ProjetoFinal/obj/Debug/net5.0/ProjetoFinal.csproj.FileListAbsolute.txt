@@ -1,0 +1,16 @@
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\bin\Debug\net5.0\ProjetoFinal.exe
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\bin\Debug\net5.0\ProjetoFinal.deps.json
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\bin\Debug\net5.0\ProjetoFinal.runtimeconfig.json
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\bin\Debug\net5.0\ProjetoFinal.runtimeconfig.dev.json
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\bin\Debug\net5.0\ProjetoFinal.dll
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\bin\Debug\net5.0\ProjetoFinal.pdb
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.csproj.AssemblyReference.cache
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.AssemblyInfoInputs.cache
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.AssemblyInfo.cs
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.csproj.CoreCompileInputs.cache
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.dll
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\refint\ProjetoFinal.dll
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.pdb
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.genruntimeconfig.cache
+C:\Users\rhenriques\Desktop\C#\ProjetoFinal\ProjetoFinal\obj\Debug\net5.0\ref\ProjetoFinal.dll
