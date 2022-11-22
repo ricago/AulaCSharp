@@ -1,16 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 
 namespace ProjetoFinal
 {
     internal class Program
     {
+        public static List<string> listaEquipa = new List<string> { };
+        public static List<string> listaMembros = new List<string> { };
+
         static void Main(string[] args)
         {
-            int op;
+            //variaveis
+            int op, op2, op3;
             string lixo;
 
             Entidades reg = new Entidades();
+            Equipa equipa = new Equipa();
+            
+
+            string equipaId = equipa.idEquipa;
+            //fim variaveis
             try
             {
                 do
@@ -27,7 +37,6 @@ namespace ProjetoFinal
                         case 1: // Adicionar ou Remover registos
                             Console.Clear();
                             Console.WriteLine("Selecione a opção desejada");
-                            int op2;
 
                             Console.WriteLine("1 - Adicionar registos");
                             Console.WriteLine("2 - Remover registos");
@@ -38,8 +47,36 @@ namespace ProjetoFinal
                             {
                                 Console.Clear();
                                 Console.WriteLine("Adicionar Registos");
+                                
+                                int opCase1;
+
+                                Console.WriteLine("Selecione onde quer adicionar registos");
+
+                                Console.WriteLine("1 - Equipa");
+                                Console.WriteLine("2 - Membro");
+                                Console.WriteLine("3 - Projeto");
+                                Console.WriteLine("4 - Tarefa");
+
+                                opCase1 = int.Parse(Console.ReadLine());
+
+                                switch (opCase1)
+                                {
+                                    case 1:
+
+                                        Console.Clear();
+                                        Equipa.adicionaregistoEquipa();
+
+                                        break;
+
+                                    case 2:
+
+                                        break;
+
+                                }
+
                                 Console.WriteLine("Pressione Enter para continuar...");
                                 lixo = Console.ReadLine(); ;
+
                             }
 
                             if (op2 == 2) //remover registos
@@ -53,7 +90,6 @@ namespace ProjetoFinal
                             break;
 
                         case 2: //Editar projetos, equipas, tarefas
-                            int op3;
                             Console.Clear();
                             Console.WriteLine("Selecione a opção desejada");
 
