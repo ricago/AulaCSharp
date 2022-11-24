@@ -6,9 +6,9 @@ namespace ProjetoFinal
 {
     internal class Program
     {
-        public static List<string> listaEquipa = new List<string> { };
-        public static List<string> listaMembros = new List<string> { };
-
+        public static List<Equipa> listaEquipa = new List<Equipa> { };
+        public static List<Membros> listaMembros = new List<Membros> { };
+        
         static void Main(string[] args)
         {
             //variaveis
@@ -17,6 +17,7 @@ namespace ProjetoFinal
 
             Entidades reg = new Entidades();
             Equipa equipa = new Equipa();
+            Membros membros = new Membros();
             
 
             string equipaId = equipa.idEquipa;
@@ -69,7 +70,7 @@ namespace ProjetoFinal
                                         break;
 
                                     case 2:
-
+                                        Membros.adicionaregistoMembros();
                                         break;
 
                                 }

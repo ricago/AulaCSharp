@@ -12,7 +12,7 @@ namespace ProjetoFinal
         public string idMembro;
         public string nome;
         public string morada;
-        public string telemovel;
+        public int telemovel;
         public string email;
         public int idade;
     }

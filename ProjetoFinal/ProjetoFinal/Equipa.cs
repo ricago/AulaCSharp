@@ -12,17 +12,17 @@ namespace ProjetoFinal
         public string nomeEquipa;
         public string listaMembros;
 
-        public static List<string> adicionaregistoEquipa()
+        public static List<Equipa> adicionaregistoEquipa()
         {
             Equipa equipa = new Equipa();
 
             Console.WriteLine("Digite o id da equipa");
             equipa.idEquipa = Console.ReadLine();
-            Program.listaEquipa.Add(equipa.idEquipa);
+
 
             Console.WriteLine("Digite o nome da equipa");
             equipa.nomeEquipa = Console.ReadLine();
-            Program.listaEquipa.Add(equipa.nomeEquipa);
+
 
             Console.WriteLine("Digite o numero de membros da equipa");
             int i = int.Parse(Console.ReadLine());
@@ -31,10 +31,12 @@ namespace ProjetoFinal
             {
                 Console.WriteLine("Digite o nome do membro");
                 equipa.listaMembros = Console.ReadLine();
-                Program.listaEquipa.Add(equipa.listaMembros);
+                
             }
 
-            foreach (string s in Program.listaEquipa)
+            Program.listaEquipa.Add(equipa);
+
+            foreach (Equipa s in Program.listaEquipa)
             {
                 Console.WriteLine(s);
             }
