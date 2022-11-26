@@ -8,7 +8,9 @@ namespace ProjetoFinal
     {
         public static List<Equipa> listaEquipa = new List<Equipa> { };
         public static List<Membros> listaMembros = new List<Membros> { };
-        
+        public static List<Projeto> listaProjeto = new List<Projeto> { };
+        public static List<Tarefas> listaTarefa = new List<Tarefas> { };
+
         static void Main(string[] args)
         {
             //variaveis
@@ -66,11 +68,22 @@ namespace ProjetoFinal
 
                                         Console.Clear();
                                         Equipa.adicionaregistoEquipa();
-
                                         break;
 
                                     case 2:
+
                                         Membros.adicionaregistoMembros();
+                                        break;
+
+                                    case 3:
+
+                                        Console.Clear();
+                                        Projeto.adicionaRegistoProjeto();
+                                        break;
+
+                                    case 4:
+                                        Console.Clear();
+                                        Tarefas.adicionaRegistoTarefa();
                                         break;
 
                                 }

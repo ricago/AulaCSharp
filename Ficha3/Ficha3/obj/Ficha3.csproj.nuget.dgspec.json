@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rhenriques\\Desktop\\C#\\Ficha3\\Ficha3\\Ficha3.csproj": {}
+    "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Ficha3\\Ficha3\\Ficha3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rhenriques\\Desktop\\C#\\Ficha3\\Ficha3\\Ficha3.csproj": {
+    "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Ficha3\\Ficha3\\Ficha3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rhenriques\\Desktop\\C#\\Ficha3\\Ficha3\\Ficha3.csproj",
+        "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Ficha3\\Ficha3\\Ficha3.csproj",
         "projectName": "Ficha3",
-        "projectPath": "C:\\Users\\rhenriques\\Desktop\\C#\\Ficha3\\Ficha3\\Ficha3.csproj",
-        "packagesPath": "C:\\Users\\rhenriques\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rhenriques\\Desktop\\C#\\Ficha3\\Ficha3\\obj\\",
+        "projectPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Ficha3\\Ficha3\\Ficha3.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Ficha3\\Ficha3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rhenriques\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

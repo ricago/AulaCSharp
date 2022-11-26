@@ -14,12 +14,13 @@ namespace ProjetoFinal
         public int telemovelMembro;
         public string emailMembro;
         public int idadeMembro;
+        public int ano;
+        public int mes;
+        public int dia;
 
         public static List<Membros> adicionaregistoMembros()
         {
             Membros membro = new Membros();
-            MembroResponsavel membroR = new MembroResponsavel();
-            MembrosEmpregado membroE = new MembrosEmpregado();
 
             Console.WriteLine("Digite o numero de membros da equipa");
             int i = int.Parse(Console.ReadLine());
@@ -33,47 +34,81 @@ namespace ProjetoFinal
                     Console.WriteLine("O membro é Responsavel? 1-sim ou 0-não?");
                     membroRes = Convert.ToBoolean(Console.ReadLine());
                 }
+
                 //Id do membro
 
-                Console.Clear();
+                /*Console.Clear(); // to do
                 Console.WriteLine("Digite o id do membro");
-                membroE.idMembro = Console.ReadLine();
+                membro.idMembro = Console.ReadLine();*/
 
 
                 //nome membro
 
                     Console.WriteLine("Digite o nome do membro");
-                    membroE.nomeMembro = Console.ReadLine();
+                    membro.nomeMembro = Console.ReadLine();
 
                 //morada do membro
 
 
                     Console.WriteLine("Digite a morada do membro");
-                    membroE.moradaMembro = Console.ReadLine();
+                    membro.moradaMembro = Console.ReadLine();
 
 
                 //telemovel
 
                     Console.WriteLine("Digite o numero de telemovel do membro");
-                    membroE.telemovelMembro = int.Parse(Console.ReadLine());
+                    membro.telemovelMembro = int.Parse(Console.ReadLine());
 
 
                 //mail
 
                     Console.WriteLine("Digite o email do membro");
-                    membroE.emailMembro = Console.ReadLine();
+                    membro.emailMembro = Console.ReadLine();
 
                 //idade
+                
 
-                    Console.WriteLine("Digite a idade do membro");
-                    membroE.idadeMembro = int.Parse(Console.ReadLine());
+                var today = DateTime.Today;
 
+                Console.WriteLine("Digite o ano de nascimento");
+                membro.ano = int.Parse(Console.ReadLine());
 
-            }Program.listaMembros.Add(membroR); //adiciona tudo por ciclo
+                Console.WriteLine("Digite o mês de nascimento");
+                membro.mes = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite o dia de nascimento");
+                membro.dia = int.Parse(Console.ReadLine());
+
+                DateTime DataNascimento = new DateTime(membro.ano, membro.mes, membro.dia);
+
+                var idade2 = today.Year - DataNascimento.Year;
+
+                var month = today.Month - DataNascimento.Month;
+
+                var day = today.Day - DataNascimento.Day;
+
+                if (idade2 == today.Year)
+                {
+
+                    if (month < DataNascimento.Month)
+                    {
+                        idade2 = idade2 - 1;
+                    }
+
+                    else if (day < DataNascimento.Day)
+                    {
+                        idade2 = idade2 - 1;
+                    }
+                }
+
+                membro.idadeMembro = idade2;
+
+            }
+            Program.listaMembros.Add(membro); //adiciona tudo por ciclo
 
             foreach (Membros s in Program.listaMembros)
             {
-                Console.WriteLine(s.idMembro);
+                //Console.WriteLine(s.idMembro);
                 Console.WriteLine(s.nomeMembro);
                 Console.WriteLine(s.moradaMembro);
                 Console.WriteLine(s.telemovelMembro);

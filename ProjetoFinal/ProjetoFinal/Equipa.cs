@@ -23,22 +23,26 @@ namespace ProjetoFinal
             Console.WriteLine("Digite o nome da equipa");
             equipa.nomeEquipa = Console.ReadLine();
 
+            //Program.listaEquipa.AddRange(Program.listaMembros);// to do
 
-            Console.WriteLine("Digite o numero de membros da equipa");
-            int i = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o numero de membros da equipa");
+            //int i = int.Parse(Console.ReadLine());
 
-            for (int j = 0; j < i; j++)
-            {
-                Console.WriteLine("Digite o nome do membro");
-                equipa.listaMembros = Console.ReadLine();
+            //for (int j = 0; j < i; j++)
+            //{
+            //    Console.WriteLine("Digite o nome do membro");
+            //    equipa.listaMembros = Console.ReadLine();
                 
-            }
+            //}
 
             Program.listaEquipa.Add(equipa);
 
             foreach (Equipa s in Program.listaEquipa)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(s.idEquipa);
+                Console.WriteLine(s.nomeEquipa);
+                Console.WriteLine(s.listaMembros);
+
             }
             return Program.listaEquipa;
         }
