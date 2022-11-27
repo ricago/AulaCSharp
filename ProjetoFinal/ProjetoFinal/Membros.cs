@@ -16,21 +16,24 @@ namespace ProjetoFinal
         public int ano;
         public int mes;
         public int dia;
+        public string morada;
+        public int telemovel;
 
-        public struct moradaMembro
+
+        /*public struct moradaMembro
         {
 
             public int codigoPostal { get; set; }
             public string rua { get; set; }
 
 
-        }
+        }*/
 
-        public struct telemovelMembro
+        /*public struct telemovelMembro
         {
             public int indicativo;
             public int numero;
-        }
+        }*/
 
         public static List<Membros> adicionaregistoMembros()
         {
@@ -57,20 +60,29 @@ namespace ProjetoFinal
                 //morada do membro
 
 
-                    Console.WriteLine("Digite a morada do membro");
-                    moradaMembro = Console.ReadLine();
+                    Console.WriteLine("Digite a rua do membro");
+                    string rua= Console.ReadLine();
 
+                    Console.WriteLine("Digite a rua do membro");
+                    int codigoPostal = int.Parse(Console.ReadLine());
 
+                    membro.morada = rua+" "+codigoPostal;
+
+                    
                 //telemovel
 
-                    Console.WriteLine("Digite o numero de telemovel do membro");
-                    membro.telemovelMembro = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite o numero de telemovel do membro");
+                int indicativo = int.Parse(Console.ReadLine());
 
+                Console.WriteLine("Digite o numero de telemovel do membro");
+                int numero = int.Parse(Console.ReadLine());
+
+                membro.telemovel = indicativo+numero;
 
                 //mail
 
-                    Console.WriteLine("Digite o email do membro");
-                    membro.emailMembro = Console.ReadLine();
+                Console.WriteLine("Digite o email do membro");
+                membro.emailMembro = Console.ReadLine();
 
                 //idade
                 
@@ -117,8 +129,8 @@ namespace ProjetoFinal
             {
                 Console.WriteLine("Id do membro: " + s.idMembro);
                 Console.WriteLine("Nome do membro: " + s.nomeMembro);
-                Console.WriteLine("Morada da membro: " + s.moradaMembro);
-                Console.WriteLine("Numero da telemovel: " + s.telemovelMembro);
+                Console.WriteLine("Morada da membro: " + s.morada);
+                Console.WriteLine("Numero da telemovel: " + s.telemovel);
                 Console.WriteLine("Email do membro: " + s.emailMembro);
                 Console.WriteLine("Idade do membro: " + s.idadeMembro);
             }
