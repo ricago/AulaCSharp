@@ -140,7 +140,6 @@ namespace ProjetoFinal
                                         lixo = Console.ReadLine();
                                         break;
                                 }
-
                                 break;
                             }
                             break;

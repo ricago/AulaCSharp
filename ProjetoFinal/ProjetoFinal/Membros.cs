@@ -16,10 +16,10 @@ namespace ProjetoFinal
         public int ano;
         public int mes;
         public int dia;
-        public string morada;
-        public int telemovel;
+        public string moradaMembro;
+        public int telemovelMembro;
 
-        public Membros() //to do
+        public Membros()
         {
             idMembro = Guid.NewGuid();
         }
@@ -27,17 +27,17 @@ namespace ProjetoFinal
         public struct morada
         {
 
-            public int codigoPostal { get; set; }
-            public string rua { get; set; }
+            public static int codigoPostal { get; set; }
+            public static string rua { get; set; }
 
 
         }
 
-        /*public struct telemovelMembro
+        public struct telemovel
         {
-            public int indicativo;
-            public int numero;
-        }*/
+            public static int indicativo;
+            public static int numero;
+        }
 
         public static List<Membros> adicionaregistoMembros()
         {
@@ -65,23 +65,23 @@ namespace ProjetoFinal
 
 
                     Console.WriteLine("Digite a rua do membro");
-                    string rua= Console.ReadLine();
+                    morada.rua= Console.ReadLine();
 
                     Console.WriteLine("Digite o codigo postal por estenso do membro");
-                    int codigoPostal = int.Parse(Console.ReadLine());
+                    morada.codigoPostal = int.Parse(Console.ReadLine());
 
-                    membro.morada = rua+" "+codigoPostal;
+                    membro.moradaMembro = morada.rua+" "+morada.codigoPostal;
 
                     
                 //telemovel
 
                 Console.WriteLine("Digite o indicativo do numero do membro");
-                int indicativo = int.Parse(Console.ReadLine());
+                telemovel.indicativo = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Digite o numero de telemovel do membro");
-                int numero = int.Parse(Console.ReadLine());
+                telemovel.numero= int.Parse(Console.ReadLine());
 
-                membro.telemovel = indicativo+numero;
+                membro.telemovelMembro = telemovel.indicativo+telemovel.numero;
 
                 //mail
 
@@ -89,7 +89,6 @@ namespace ProjetoFinal
                 membro.emailMembro = Console.ReadLine();
 
                 //idade
-                
 
                 var today = DateTime.Today;
 
@@ -127,14 +126,15 @@ namespace ProjetoFinal
                 membro.idadeMembro = idade2;
 
             }
+            //Program.listaMembros.Add(Membros.idMembro); //to do
             Program.listaMembros.Add(membro); //adiciona tudo por ciclo
 
             foreach (Membros s in Program.listaMembros)
             {
                 Console.WriteLine("Id do membro: " + Membros.idMembro);
                 Console.WriteLine("Nome do membro: " + s.nomeMembro);
-                Console.WriteLine("Morada da membro: " + s.morada);
-                Console.WriteLine("Numero da telemovel: " + s.telemovel);
+                Console.WriteLine("Morada da membro: " + s.moradaMembro);
+                Console.WriteLine("Numero da telemovel: " + s.telemovelMembro);
                 Console.WriteLine("Email do membro: " + s.emailMembro);
                 Console.WriteLine("Idade do membro: " + s.idadeMembro);
             }
@@ -145,6 +145,17 @@ namespace ProjetoFinal
         public static List<Membros> removeregistoMembro()
         {
             Membros membro = new Membros();
+
+            /* Console.WriteLine("Digite o ID que deseja eliminar: ");
+            Guid procuraId = Guid.Parse(Console.ReadLine());
+
+           for(int i =0; i < Program.listaProjeto.Count; i++) // to do
+            {
+                if (Program.listaProjeto[i].)
+                {
+
+                }
+            }*/
 
             Program.listaMembros.Remove(membro);
 

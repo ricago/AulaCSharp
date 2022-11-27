@@ -56,6 +56,18 @@ namespace ProjetoFinal
         {
             Projeto projeto = new Projeto();
 
+            /* Console.WriteLine("Digite o ID que deseja eliminar: ");
+            Guid procuraId = Guid.Parse(Console.ReadLine());
+
+           for(int i =0; i < Program.listaProjeto.Count; i++) // to do
+            {
+                if (Program.listaProjeto[i].)
+                {
+
+                }
+            }*/
+           
+
             Program.listaProjeto.Remove(projeto);
 
             return Program.listaProjeto;
