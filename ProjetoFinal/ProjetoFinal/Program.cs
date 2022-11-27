@@ -21,8 +21,6 @@ namespace ProjetoFinal
             Equipa equipa = new Equipa();
             Membros membros = new Membros();
             
-
-            string equipaId = equipa.idEquipa;
             //fim variaveis
             try
             {
@@ -55,8 +53,8 @@ namespace ProjetoFinal
 
                                 Console.WriteLine("Selecione onde quer adicionar registos");
 
-                                Console.WriteLine("1 - Equipa");
-                                Console.WriteLine("2 - Membro");
+                                Console.WriteLine("1 - Membro");
+                                Console.WriteLine("2 - Equipa");
                                 Console.WriteLine("3 - Projeto");
                                 Console.WriteLine("4 - Tarefa");
 
@@ -67,12 +65,12 @@ namespace ProjetoFinal
                                     case 1:
 
                                         Console.Clear();
-                                        Equipa.adicionaregistoEquipa();
+                                        Membros.adicionaregistoMembros();
                                         break;
 
                                     case 2:
-
-                                        Membros.adicionaregistoMembros();
+                                        Console.Clear();
+                                        Equipa.adicionaregistoEquipa();
                                         break;
 
                                     case 3:
@@ -97,10 +95,54 @@ namespace ProjetoFinal
                             {
                                 Console.Clear();
                                 Console.WriteLine("Remover Registos");
-                                Console.WriteLine("Pressione Enter para continuar...");
-                                lixo = Console.ReadLine();
-                            }
+                                int opRemove;
 
+                                Console.WriteLine("Selecione onde quer remover registos");
+
+                                Console.WriteLine("1 - Equipa");
+                                Console.WriteLine("2 - Membro");
+                                Console.WriteLine("3 - Projeto");
+                                Console.WriteLine("4 - Tarefa");
+
+                                opRemove = int.Parse(Console.ReadLine());
+
+                                switch (opRemove) { 
+                                case 1:
+
+                                        Console.Clear();
+                                        Equipa.removeregistoEquipa();
+                                        Console.WriteLine("Pressione Enter para continuar...");
+                                        lixo = Console.ReadLine();
+                                        break;
+
+                                    case 2:
+
+                                        Console.Clear();
+                                        Equipa.removeregistoEquipa();
+                                        Console.WriteLine("Pressione Enter para continuar...");
+                                        lixo = Console.ReadLine();
+                                        break;
+
+
+                                    case 3:
+
+                                        Console.Clear();
+                                        Equipa.removeregistoEquipa();
+                                        Console.WriteLine("Pressione Enter para continuar...");
+                                        lixo = Console.ReadLine();
+                                        break;
+
+                                    case 4:
+
+                                        Console.Clear();
+                                        Equipa.removeregistoEquipa();
+                                        Console.WriteLine("Pressione Enter para continuar...");
+                                        lixo = Console.ReadLine();
+                                        break;
+                                }
+
+                                break;
+                            }
                             break;
 
                         case 2: //Editar projetos, equipas, tarefas

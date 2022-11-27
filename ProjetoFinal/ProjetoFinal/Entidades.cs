@@ -8,10 +8,6 @@ namespace ProjetoFinal
 {
     internal class Entidades
     {
-        public string idTarefa;
-        public string idEquipa;
-        public string idMembro;
-        public string idProjeto;
 
         public void Menu1()
         {

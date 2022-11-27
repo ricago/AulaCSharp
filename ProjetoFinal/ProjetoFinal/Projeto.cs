@@ -6,31 +6,42 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal
 {
-    internal class Projeto:Entidades
+    internal class Projeto: Membros
     {
-        public string idProjeto;
-        public string idEquipa;
+
+        Guid idProjeto = Guid.NewGuid();
+        Guid idEquipa = Guid.NewGuid();
         public string nome;
         public string listaTarefas;
 
+        
+
         public static List<Projeto> adicionaRegistoProjeto()
         {
+            try
+            {
+                Projeto projeto = new Projeto();
 
-            Projeto projeto = new Projeto();
+                Console.WriteLine("Digite o nome do projeto");
+                projeto.nome = Console.ReadLine();
 
-            Console.WriteLine("Digite o id do projeto");
-            projeto.idProjeto = Console.ReadLine();
+                Console.WriteLine("Digite a lista de tarefas");
+                //Program.listaProjeto.AddRange(Program.listaTarefa); //to do
+                //projeto.listaTarefas = Console.ReadLine();
 
-            Console.WriteLine("Digite o id da equipa"); // to do
-            projeto.idEquipa = Console.ReadLine();
+                foreach (Projeto p in Program.listaProjeto)
+                {
+                    Console.WriteLine("Id do projeto: "+p.idProjeto);
+                    Console.WriteLine("Id da equipa: "+p.idEquipa);
+                    Console.WriteLine("Nome do projeto: "+p.nome);
+                    Console.WriteLine("Lista de Tarefas"+p.listaTarefas);
 
-            Console.WriteLine("Digite o nome do projeto");
-            projeto.nome = Console.ReadLine();
-
-            Console.WriteLine("Digite a lista de tarefas");
-            //Program.listaProjeto.AddRange(Program.listaTarefa); //to do
-            //projeto.listaTarefas = Console.ReadLine();
-
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Ocorreu um erro");
+            }
             return Program.listaProjeto;
         }
     }

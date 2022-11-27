@@ -6,17 +6,31 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal
 {
-    internal class Membros:Entidades
+    internal class Membros
     {
-        public string idMembro;
+
+        Guid idMembro = Guid.NewGuid();
         public string nomeMembro;
-        public string moradaMembro;
-        public int telemovelMembro;
         public string emailMembro;
         public int idadeMembro;
         public int ano;
         public int mes;
         public int dia;
+
+        public struct moradaMembro
+        {
+
+            public int codigoPostal { get; set; }
+            public string rua { get; set; }
+
+
+        }
+
+        public struct telemovelMembro
+        {
+            public int indicativo;
+            public int numero;
+        }
 
         public static List<Membros> adicionaregistoMembros()
         {
@@ -31,16 +45,9 @@ namespace ProjetoFinal
                 // se é responsavel
 
                 if (membroRes==false) { //se for true não vai perguntar mais(so aceita true ou false)
-                    Console.WriteLine("O membro é Responsavel? 1-sim ou 0-não?");
+                    Console.WriteLine("O membro é Responsavel? true-sim ou false-não?");
                     membroRes = Convert.ToBoolean(Console.ReadLine());
                 }
-
-                //Id do membro
-
-                /*Console.Clear(); // to do
-                Console.WriteLine("Digite o id do membro");
-                membro.idMembro = Console.ReadLine();*/
-
 
                 //nome membro
 
@@ -51,7 +58,7 @@ namespace ProjetoFinal
 
 
                     Console.WriteLine("Digite a morada do membro");
-                    membro.moradaMembro = Console.ReadLine();
+                    moradaMembro = Console.ReadLine();
 
 
                 //telemovel
@@ -108,12 +115,12 @@ namespace ProjetoFinal
 
             foreach (Membros s in Program.listaMembros)
             {
-                //Console.WriteLine(s.idMembro);
-                Console.WriteLine(s.nomeMembro);
-                Console.WriteLine(s.moradaMembro);
-                Console.WriteLine(s.telemovelMembro);
-                Console.WriteLine(s.emailMembro);
-                Console.WriteLine(s.idadeMembro);
+                Console.WriteLine("Id do membro: " + s.idMembro);
+                Console.WriteLine("Nome do membro: " + s.nomeMembro);
+                Console.WriteLine("Morada da membro: " + s.moradaMembro);
+                Console.WriteLine("Numero da telemovel: " + s.telemovelMembro);
+                Console.WriteLine("Email do membro: " + s.emailMembro);
+                Console.WriteLine("Idade do membro: " + s.idadeMembro);
             }
 
             return Program.listaMembros;

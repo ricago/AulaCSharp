@@ -6,25 +6,21 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal
 {
-    internal class Tarefas:Entidades
+    internal class Tarefas: Membros
     {
-        /*public string idTarefa;
-        public string idMembro;*/
+
+        Guid idTarefa = Guid.NewGuid();
+        Guid idMembro = Guid.NewGuid();
         public string titulo;
         public string dataInicio;
         public string dataFim;
         public string estado;
 
-
         public static List<Tarefas> adicionaRegistoTarefa()
         {
+            try { 
+
             Tarefas tarefa = new Tarefas();
-
-            /*Console.WriteLine("Digite o id da Tarefa"); // to do
-            tarefa.idTarefa = Console.ReadLine();
-
-            Console.WriteLine("Digite o id da equipa");// to do
-            tarefa.idMembro = Console.ReadLine();*/
 
             Console.WriteLine("Digite o titulo da tarefa");
             tarefa.titulo = Console.ReadLine();
@@ -62,14 +58,19 @@ namespace ProjetoFinal
 
             foreach (Tarefas t in Program.listaTarefa)
             {
-                //Console.WriteLine(t.idMembro);
-                //Console.WriteLine(t.idTarefa);
-                Console.WriteLine(t.titulo);
-                Console.WriteLine(t.dataInicio);
-                Console.WriteLine(t.dataFim);
-                Console.WriteLine(t.estado);
+                Console.WriteLine("Id do membro: " +t.idMembro);
+                Console.WriteLine("Id da tarefa: " +t.idTarefa);
+                Console.WriteLine("Titulo da tarefa: "+t.titulo);
+                Console.WriteLine("Data de inicio da tarefa: " + t.dataInicio);
+                Console.WriteLine("Data de fim da Tarefa: "+t.dataFim);
+                Console.WriteLine("Estado da tarefa: "+t.estado);
+
             }
-            
+
+            }catch(Exception e)
+            {
+                Console.WriteLine("Ocorreu um erro");
+            }
             return Program.listaTarefa;
         }
     }

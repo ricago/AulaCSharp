@@ -6,44 +6,47 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal
 {
-    internal class Equipa:Entidades
+    internal class Equipa : Membros
     {
-        public string idEquipa;
+
+        Guid idEquipa = Guid.NewGuid();
         public string nomeEquipa;
         public string listaMembros;
 
+        
+
         public static List<Equipa> adicionaregistoEquipa()
         {
+            try { 
+            
             Equipa equipa = new Equipa();
-
-            Console.WriteLine("Digite o id da equipa");
-            equipa.idEquipa = Console.ReadLine();
-
 
             Console.WriteLine("Digite o nome da equipa");
             equipa.nomeEquipa = Console.ReadLine();
-
-            //Program.listaEquipa.AddRange(Program.listaMembros);// to do
-
-            //Console.WriteLine("Digite o numero de membros da equipa");
-            //int i = int.Parse(Console.ReadLine());
-
-            //for (int j = 0; j < i; j++)
-            //{
-            //    Console.WriteLine("Digite o nome do membro");
-            //    equipa.listaMembros = Console.ReadLine();
-                
-            //}
 
             Program.listaEquipa.Add(equipa);
 
             foreach (Equipa s in Program.listaEquipa)
             {
-                Console.WriteLine(s.idEquipa);
-                Console.WriteLine(s.nomeEquipa);
-                Console.WriteLine(s.listaMembros);
+                Console.WriteLine("Id da Equipa: "+s.idEquipa);
+                Console.WriteLine("Nome da Equipa: " + s.nomeEquipa);
+                Console.WriteLine("Lista de membros: " + s.listaMembros);
 
             }
+
+            }catch(Exception e)
+            {
+                Console.WriteLine("Ocorreu um erro");
+            }
+            return Program.listaEquipa;
+        }
+
+        public static List<Equipa> removeregistoEquipa()
+        {
+            Equipa equipa = new Equipa();
+
+            Program.listaEquipa.Remove(equipa);
+
             return Program.listaEquipa;
         }
     }
