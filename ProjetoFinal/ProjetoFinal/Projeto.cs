@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal
 {
-    internal class Projeto: Membros
+    internal class Projeto : Membros
     {
-
-        Guid idProjeto = Guid.NewGuid();
-        Guid idEquipa = Guid.NewGuid();
+        //variaveis
+        public static Guid idProjeto { get; set; }
+        Equipa idEquipa;
         public string nome;
         public string listaTarefas;
 
+        //construtor guid
+        public Projeto()
+        {
+            idProjeto = Guid.NewGuid();
+        }
         
-
+        //função add
         public static List<Projeto> adicionaRegistoProjeto()
         {
             try
@@ -31,7 +36,7 @@ namespace ProjetoFinal
 
                 foreach (Projeto p in Program.listaProjeto)
                 {
-                    Console.WriteLine("Id do projeto: "+p.idProjeto);
+                    Console.WriteLine("Id do projeto: "+Projeto.idProjeto);
                     Console.WriteLine("Id da equipa: "+p.idEquipa);
                     Console.WriteLine("Nome do projeto: "+p.nome);
                     Console.WriteLine("Lista de Tarefas"+p.listaTarefas);
@@ -42,6 +47,17 @@ namespace ProjetoFinal
             {
                 Console.WriteLine("Ocorreu um erro");
             }
+            return Program.listaProjeto;
+        }
+
+
+        //função remove
+        public static List<Projeto> removeregistoProjeto()
+        {
+            Projeto projeto = new Projeto();
+
+            Program.listaProjeto.Remove(projeto);
+
             return Program.listaProjeto;
         }
     }

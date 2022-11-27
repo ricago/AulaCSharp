@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rhenriques\\.nuget\\packages\\": {}
+    "C:\\Users\\Ricardo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rhenriques\\Desktop\\C#\\aula6\\Exerc.2\\Exerc.2.csproj",
+      "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula6\\Exerc.2\\Exerc.2.csproj",
       "projectName": "Exerc.2",
-      "projectPath": "C:\\Users\\rhenriques\\Desktop\\C#\\aula6\\Exerc.2\\Exerc.2.csproj",
-      "packagesPath": "C:\\Users\\rhenriques\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rhenriques\\Desktop\\C#\\aula6\\Exerc.2\\obj\\",
+      "projectPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula6\\Exerc.2\\Exerc.2.csproj",
+      "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula6\\Exerc.2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rhenriques\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rhenriques\\Desktop\\C#\\aula7\\aula7exerc\\aula7exerc.csproj": {}
+    "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula7\\aula7exerc\\aula7exerc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rhenriques\\Desktop\\C#\\aula7\\aula7exerc\\aula7exerc.csproj": {
+    "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula7\\aula7exerc\\aula7exerc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rhenriques\\Desktop\\C#\\aula7\\aula7exerc\\aula7exerc.csproj",
+        "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula7\\aula7exerc\\aula7exerc.csproj",
         "projectName": "aula7exerc",
-        "projectPath": "C:\\Users\\rhenriques\\Desktop\\C#\\aula7\\aula7exerc\\aula7exerc.csproj",
-        "packagesPath": "C:\\Users\\rhenriques\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rhenriques\\Desktop\\C#\\aula7\\aula7exerc\\obj\\",
+        "projectPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula7\\aula7exerc\\aula7exerc.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula7\\aula7exerc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rhenriques\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

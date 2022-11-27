@@ -118,7 +118,7 @@ namespace ProjetoFinal
                                     case 2:
 
                                         Console.Clear();
-                                        Equipa.removeregistoEquipa();
+                                        Membros.removeregistoMembro();
                                         Console.WriteLine("Pressione Enter para continuar...");
                                         lixo = Console.ReadLine();
                                         break;
@@ -127,7 +127,7 @@ namespace ProjetoFinal
                                     case 3:
 
                                         Console.Clear();
-                                        Equipa.removeregistoEquipa();
+                                        Projeto.removeregistoProjeto();
                                         Console.WriteLine("Pressione Enter para continuar...");
                                         lixo = Console.ReadLine();
                                         break;
@@ -135,7 +135,7 @@ namespace ProjetoFinal
                                     case 4:
 
                                         Console.Clear();
-                                        Equipa.removeregistoEquipa();
+                                        Tarefas.removeregistoTarefa();
                                         Console.WriteLine("Pressione Enter para continuar...");
                                         lixo = Console.ReadLine();
                                         break;

@@ -9,16 +9,20 @@ namespace ProjetoFinal
     internal class Tarefas: Membros
     {
 
-        Guid idTarefa = Guid.NewGuid();
-        Guid idMembro = Guid.NewGuid();
+        public static Guid idTarefa { get; set; }
         public string titulo;
         public string dataInicio;
         public string dataFim;
         public string estado;
 
+        public Tarefas()
+        {
+            idTarefa = Guid.NewGuid();
+            //string idTarefa = System.Guid.NewGuid().ToString();
+        }
         public static List<Tarefas> adicionaRegistoTarefa()
         {
-            try { 
+            try {
 
             Tarefas tarefa = new Tarefas();
 
@@ -33,7 +37,6 @@ namespace ProjetoFinal
             int mes = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o dia de inicio");//dia //ate 31 e acima de 0
             int dia = int.Parse(Console.ReadLine());
-
 
             //adicionar tudo num só
             tarefa.dataInicio = ano + "/" + mes + "/" + dia;
@@ -54,12 +57,14 @@ namespace ProjetoFinal
             Console.WriteLine("Estado do projeto");
             tarefa.estado = Console.ReadLine();
 
-            Program.listaTarefa.Add(tarefa); //adiciona tudo por ciclo
+                //Program.listaTarefa.Add(Membros.idMembro); //to do
 
+                Program.listaTarefa.Add(tarefa); //adiciona tudo por ciclo
+                
             foreach (Tarefas t in Program.listaTarefa)
             {
-                Console.WriteLine("Id do membro: " +t.idMembro);
-                Console.WriteLine("Id da tarefa: " +t.idTarefa);
+                Console.WriteLine("Id do membro: " +Membros.idMembro);
+                Console.WriteLine("Id da tarefa: " +Tarefas.idTarefa);
                 Console.WriteLine("Titulo da tarefa: "+t.titulo);
                 Console.WriteLine("Data de inicio da tarefa: " + t.dataInicio);
                 Console.WriteLine("Data de fim da Tarefa: "+t.dataFim);
@@ -73,5 +78,15 @@ namespace ProjetoFinal
             }
             return Program.listaTarefa;
         }
+
+        public static List<Tarefas> removeregistoTarefa()
+        {
+            Tarefas tarefa = new Tarefas();
+
+            Program.listaTarefa.Remove(tarefa);
+
+            return Program.listaTarefa;
+        }
+
     }
 }

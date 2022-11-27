@@ -9,7 +9,7 @@ namespace ProjetoFinal
     internal class Membros
     {
 
-        Guid idMembro = Guid.NewGuid();
+        public static Guid idMembro { get; set; }
         public string nomeMembro;
         public string emailMembro;
         public int idadeMembro;
@@ -19,15 +19,19 @@ namespace ProjetoFinal
         public string morada;
         public int telemovel;
 
+        public Membros() //to do
+        {
+            idMembro = Guid.NewGuid();
+        }
 
-        /*public struct moradaMembro
+        public struct morada
         {
 
             public int codigoPostal { get; set; }
             public string rua { get; set; }
 
 
-        }*/
+        }
 
         /*public struct telemovelMembro
         {
@@ -63,7 +67,7 @@ namespace ProjetoFinal
                     Console.WriteLine("Digite a rua do membro");
                     string rua= Console.ReadLine();
 
-                    Console.WriteLine("Digite a rua do membro");
+                    Console.WriteLine("Digite o codigo postal por estenso do membro");
                     int codigoPostal = int.Parse(Console.ReadLine());
 
                     membro.morada = rua+" "+codigoPostal;
@@ -71,7 +75,7 @@ namespace ProjetoFinal
                     
                 //telemovel
 
-                Console.WriteLine("Digite o numero de telemovel do membro");
+                Console.WriteLine("Digite o indicativo do numero do membro");
                 int indicativo = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Digite o numero de telemovel do membro");
@@ -127,7 +131,7 @@ namespace ProjetoFinal
 
             foreach (Membros s in Program.listaMembros)
             {
-                Console.WriteLine("Id do membro: " + s.idMembro);
+                Console.WriteLine("Id do membro: " + Membros.idMembro);
                 Console.WriteLine("Nome do membro: " + s.nomeMembro);
                 Console.WriteLine("Morada da membro: " + s.morada);
                 Console.WriteLine("Numero da telemovel: " + s.telemovel);
@@ -137,5 +141,15 @@ namespace ProjetoFinal
 
             return Program.listaMembros;
         }
+
+        public static List<Membros> removeregistoMembro()
+        {
+            Membros membro = new Membros();
+
+            Program.listaMembros.Remove(membro);
+
+            return Program.listaMembros;
+        }
+
     }
 }

@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rhenriques\\.nuget\\packages\\": {}
+    "C:\\Users\\Ricardo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rhenriques\\Desktop\\C#\\Aula5Exerc\\Aula5Exerc\\Aula5Exerc.csproj",
+      "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Aula5Exerc\\Aula5Exerc\\Aula5Exerc.csproj",
       "projectName": "Aula5Exerc",
-      "projectPath": "C:\\Users\\rhenriques\\Desktop\\C#\\Aula5Exerc\\Aula5Exerc\\Aula5Exerc.csproj",
-      "packagesPath": "C:\\Users\\rhenriques\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rhenriques\\Desktop\\C#\\Aula5Exerc\\Aula5Exerc\\obj\\",
+      "projectPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Aula5Exerc\\Aula5Exerc\\Aula5Exerc.csproj",
+      "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\Aula5Exerc\\Aula5Exerc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rhenriques\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

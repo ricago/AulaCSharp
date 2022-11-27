@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rhenriques\\.nuget\\packages\\": {}
+    "C:\\Users\\Ricardo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rhenriques\\Desktop\\C#\\aula6\\aula6\\aula6.csproj",
+      "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula6\\aula6\\aula6.csproj",
       "projectName": "aula6",
-      "projectPath": "C:\\Users\\rhenriques\\Desktop\\C#\\aula6\\aula6\\aula6.csproj",
-      "packagesPath": "C:\\Users\\rhenriques\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rhenriques\\Desktop\\C#\\aula6\\aula6\\obj\\",
+      "projectPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula6\\aula6\\aula6.csproj",
+      "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\aula6\\aula6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rhenriques\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
