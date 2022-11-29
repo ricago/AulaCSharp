@@ -8,7 +8,7 @@ namespace ProjetoFinal
 {
     internal class Membros
     {
-
+        //variaveis
         public static Guid idMembro { get; set; }
         public string nomeMembro;
         public string emailMembro;
@@ -18,12 +18,16 @@ namespace ProjetoFinal
         public int dia;
         public string moradaMembro;
         public int telemovelMembro;
+        public string IdMembro;
 
+        //construtor guid
         public Membros()
         {
             idMembro = Guid.NewGuid();
+
         }
 
+        //struct da morada
         public struct morada
         {
 
@@ -33,55 +37,65 @@ namespace ProjetoFinal
 
         }
 
+        //struct do telemovel
         public struct telemovel
         {
-            public static int indicativo;
-            public static int numero;
+            public static int indicativo { get; set; }
+            public static int numero { get; set; }
         }
 
+        //metodo adicionar
         public static List<Membros> adicionaregistoMembros()
         {
+            //poo
             Membros membro = new Membros();
 
+            //converter para string
+            membro.IdMembro = idMembro.ToString();
+
+            //inserir dados
             Console.WriteLine("Digite o numero de membros da equipa");
             int i = int.Parse(Console.ReadLine());
-            bool membroRes=false;
+            bool membroRes = false;
 
+            //verifica se é responsavel
             for (int j = 0; j < i; j++)
             {
-                // se é responsavel
+                //se for true não vai perguntar mais(so aceita true ou false)
 
-                if (membroRes==false) { //se for true não vai perguntar mais(so aceita true ou false)
+                if (membroRes == false)
+                {
                     Console.WriteLine("O membro é Responsavel? true-sim ou false-não?");
                     membroRes = Convert.ToBoolean(Console.ReadLine());
                 }
 
                 //nome membro
 
-                    Console.WriteLine("Digite o nome do membro");
-                    membro.nomeMembro = Console.ReadLine();
+                Console.WriteLine("Digite o nome do membro");
+                membro.nomeMembro = Console.ReadLine();
 
                 //morada do membro
 
+                Console.WriteLine("Digite a rua do membro");
+                morada.rua = Console.ReadLine();
 
-                    Console.WriteLine("Digite a rua do membro");
-                    morada.rua= Console.ReadLine();
+                Console.WriteLine("Digite o codigo postal por estenso do membro");
+                morada.codigoPostal = int.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Digite o codigo postal por estenso do membro");
-                    morada.codigoPostal = int.Parse(Console.ReadLine());
+                //juntar tudo
+                membro.moradaMembro = morada.rua + " " + morada.codigoPostal;
 
-                    membro.moradaMembro = morada.rua+" "+morada.codigoPostal;
 
-                    
                 //telemovel
 
                 Console.WriteLine("Digite o indicativo do numero do membro");
                 telemovel.indicativo = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Digite o numero de telemovel do membro");
-                telemovel.numero= int.Parse(Console.ReadLine());
+                telemovel.numero = int.Parse(Console.ReadLine());
 
-                membro.telemovelMembro = telemovel.indicativo+telemovel.numero;
+                //juntar tudo
+                membro.telemovelMembro = telemovel.indicativo + telemovel.numero;
 
                 //mail
 
@@ -89,26 +103,36 @@ namespace ProjetoFinal
                 membro.emailMembro = Console.ReadLine();
 
                 //idade
+                //dia de Hoje mesmo
 
                 var today = DateTime.Today;
 
-                Console.WriteLine("Digite o ano de nascimento");
-                membro.ano = int.Parse(Console.ReadLine());
+                do {
+                    Console.WriteLine("Digite o ano de nascimento");
+                    membro.ano = int.Parse(Console.ReadLine());
+                } while (membro.ano <1940 || membro.ano>2022);
 
-                Console.WriteLine("Digite o mês de nascimento");
-                membro.mes = int.Parse(Console.ReadLine());
+                do {
+                    Console.WriteLine("Digite o mês de nascimento");
+                    membro.mes = int.Parse(Console.ReadLine());
+                } while (membro.mes <12 || membro.mes > 0);
 
-                Console.WriteLine("Digite o dia de nascimento");
-                membro.dia = int.Parse(Console.ReadLine());
+                do {
+                    Console.WriteLine("Digite o dia de nascimento");
+                    membro.dia = int.Parse(Console.ReadLine());
+                } while (membro.dia<31 || membro.dia>0);
 
+                //data de nascimento em datetime
                 DateTime DataNascimento = new DateTime(membro.ano, membro.mes, membro.dia);
 
+                //calculo
                 var idade2 = today.Year - DataNascimento.Year;
 
                 var month = today.Month - DataNascimento.Month;
 
                 var day = today.Day - DataNascimento.Day;
 
+                //se ja fez anos ou não
                 if (idade2 == today.Year)
                 {
 
@@ -122,45 +146,49 @@ namespace ProjetoFinal
                         idade2 = idade2 - 1;
                     }
                 }
-
+                //adicionar á variavel
                 membro.idadeMembro = idade2;
 
             }
-            //Program.listaMembros.Add(Membros.idMembro); //to do
+
             Program.listaMembros.Add(membro); //adiciona tudo por ciclo
 
+
+
+            return Program.listaMembros;
+        }
+
+        //metodo remover
+        public static void removeregistoMembro()
+        {
+            //inserir o ID
+            Console.WriteLine("Digite o ID que deseja eliminar: ");
+            string procuraId = Console.ReadLine();
+
+            //percorre a lista 
+            for (int i = 0; i < Program.listaProjeto.Count; i++)
+            {
+                //verifica se é igual
+                if (Program.listaMembros[i].IdMembro == procuraId)
+                {
+                    //elimina
+                    Program.listaMembros.Remove(Program.listaMembros[i]);
+                }
+            }
+        }
+
+        public static void imprimirRelatorioMem()
+        {
+            //imprimir
             foreach (Membros s in Program.listaMembros)
             {
-                Console.WriteLine("Id do membro: " + Membros.idMembro);
+                Console.WriteLine("Id do membro: " + s.IdMembro);
                 Console.WriteLine("Nome do membro: " + s.nomeMembro);
                 Console.WriteLine("Morada da membro: " + s.moradaMembro);
                 Console.WriteLine("Numero da telemovel: " + s.telemovelMembro);
                 Console.WriteLine("Email do membro: " + s.emailMembro);
                 Console.WriteLine("Idade do membro: " + s.idadeMembro);
             }
-
-            return Program.listaMembros;
         }
-
-        public static List<Membros> removeregistoMembro()
-        {
-            Membros membro = new Membros();
-
-            /* Console.WriteLine("Digite o ID que deseja eliminar: ");
-            Guid procuraId = Guid.Parse(Console.ReadLine());
-
-           for(int i =0; i < Program.listaProjeto.Count; i++) // to do
-            {
-                if (Program.listaProjeto[i].)
-                {
-
-                }
-            }*/
-
-            Program.listaMembros.Remove(membro);
-
-            return Program.listaMembros;
-        }
-
     }
 }

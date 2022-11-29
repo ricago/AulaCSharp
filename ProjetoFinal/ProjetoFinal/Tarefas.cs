@@ -6,87 +6,146 @@ using System.Threading.Tasks;
 
 namespace ProjetoFinal
 {
-    internal class Tarefas: Membros
+    internal class Tarefas : Membros
     {
-
+        //variaveis
         public static Guid idTarefa { get; set; }
         public string titulo;
         public string dataInicio;
         public string dataFim;
         public string estado;
+        public string IdTarefa;
 
+        //construtor guid
         public Tarefas()
         {
             idTarefa = Guid.NewGuid();
-            //string idTarefa = System.Guid.NewGuid().ToString();
+
         }
+
+        //enum do estado da tarefa
+        enum estadoTarefa
+        {
+            Concluido = 1, Inconcluido = 0
+        }
+
+        //adiciona tarefa
         public static List<Tarefas> adicionaRegistoTarefa()
         {
-            try {
+            try
+            {
+                //variaveis para juntar
+                int ano, mes, dia;
 
-            Tarefas tarefa = new Tarefas();
+                //poo
+                Tarefas tarefa = new Tarefas();
 
-            Console.WriteLine("Digite o titulo da tarefa");
-            tarefa.titulo = Console.ReadLine();
+                //converte para string
+                tarefa.IdTarefa = idTarefa.ToString();
 
-            Console.WriteLine("Digite a data de inicio da tarefa");
+                //inserir dados
+                Console.WriteLine("Digite o titulo da tarefa");
+                tarefa.titulo = Console.ReadLine();
 
-            Console.WriteLine("Digite o ano de inicio");//ano //ate 2022 ou datatime hoje e acima de 1900
-            int ano = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o mês de inicio");//mes //ate 12 e acima de 0
-            int mes = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o dia de inicio");//dia //ate 31 e acima de 0
-            int dia = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite a data de inicio da tarefa");
+                do //ano //ate 2022 ou datatime hoje e acima de 1900
+                {
+                    Console.WriteLine("Digite o ano de inicio");
+                    ano = int.Parse(Console.ReadLine());
+                } while (ano < 1970 || ano > 2022);
 
-            //adicionar tudo num só
-            tarefa.dataInicio = ano + "/" + mes + "/" + dia;
+                do //mes //ate 12 e acima de 0
+                {
+                    Console.WriteLine("Digite o mês de inicio");
+                    mes = int.Parse(Console.ReadLine());
+                } while (mes < 1 || mes > 12);
 
-            Console.WriteLine("Digite a data de fim da tarefa");
+                do //dia //ate 31 e acima de 0
+                {
+                    Console.WriteLine("Digite o dia de inicio");
+                    dia = int.Parse(Console.ReadLine());
+                } while (dia < 1 || dia > 31);
 
-            Console.WriteLine("Digite o ano de fim");//ano //ate 2022 ou datatime hoje e acima de 1900
-            ano = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o mês de fim");//mes //ate 12 e acima de 0
-            mes = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digite o dia de fim");//dia //ate 31 e acima de 0
-            dia = int.Parse(Console.ReadLine());
+                //adicionar tudo num só
+                tarefa.dataInicio = ano + "/" + mes + "/" + dia;
 
-            //adicionar tudo num
 
-            tarefa.dataFim = ano+"/"+mes+"/"+dia;
+                Console.WriteLine("Digite a data de fim da tarefa");
+                do //ano //ate 2022 ou datatime hoje e acima de 1900
+                {
+                    Console.WriteLine("Digite o ano de  da tarefa");
+                    ano = int.Parse(Console.ReadLine());
+                } while (ano < 1970 || ano > 2022);
 
-            Console.WriteLine("Estado do projeto");
-            tarefa.estado = Console.ReadLine();
+                do //mes //ate 12 e acima de 0
+                {
+                    Console.WriteLine("Digite o mês de  da tarefa");
+                    mes = int.Parse(Console.ReadLine());
+                } while (mes < 1 || mes > 12);
 
-                //Program.listaTarefa.Add(Membros.idMembro); //to do
+                do //dia //ate 31 e acima de 0
+                {
+                    Console.WriteLine("Digite o dia de fim da tarefa");
+                    dia = int.Parse(Console.ReadLine());
+                } while (dia < 1 || dia > 31);
+
+                //adicionar tudo num só
+
+                tarefa.dataFim = ano + "/" + mes + "/" + dia;
+
+                // do {
+                Console.WriteLine("Estado do projeto  1 - Concluido  0 - Inconcluido");
+                tarefa.estado = Console.ReadLine();
+                // } while (tarefa.estado != "1" || tarefa.estado != "0");
+
+                //adicionar guid de fora
+                tarefa.IdMembro = Membros.idMembro.ToString();
 
                 Program.listaTarefa.Add(tarefa); //adiciona tudo por ciclo
-                
-            foreach (Tarefas t in Program.listaTarefa)
-            {
-                Console.WriteLine("Id do membro: " +Membros.idMembro);
-                Console.WriteLine("Id da tarefa: " +Tarefas.idTarefa);
-                Console.WriteLine("Titulo da tarefa: "+t.titulo);
-                Console.WriteLine("Data de inicio da tarefa: " + t.dataInicio);
-                Console.WriteLine("Data de fim da Tarefa: "+t.dataFim);
-                Console.WriteLine("Estado da tarefa: "+t.estado);
+
+
 
             }
-
-            }catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine("Ocorreu um erro");
             }
             return Program.listaTarefa;
         }
 
-        public static List<Tarefas> removeregistoTarefa()
+        //metodo remove
+        public static void removeregistoTarefa()
         {
-            Tarefas tarefa = new Tarefas();
+            //inserir id
+            Console.WriteLine("Digite o ID que deseja eliminar: ");
+            string procuraId = Console.ReadLine();
 
-            Program.listaTarefa.Remove(tarefa);
-
-            return Program.listaTarefa;
+            //percorrer lista
+            for (int i = 0; i < Program.listaProjeto.Count; i++)
+            {
+                //verifica se é igual
+                if (Program.listaProjeto[i].IdProjeto == procuraId)
+                {
+                    //elimina
+                    Program.listaProjeto.Remove(Program.listaProjeto[i]);
+                }
+            }
         }
 
+        public static void imprimirRelatorioTar()
+        {
+
+            //imprimir
+            foreach (Tarefas t in Program.listaTarefa)
+            {
+                Console.WriteLine("Id do membro: " + t.IdMembro);
+                Console.WriteLine("Id da tarefa: " + t.IdTarefa);
+                Console.WriteLine("Titulo da tarefa: " + t.titulo);
+                Console.WriteLine("Data de inicio da tarefa: " + t.dataInicio);
+                Console.WriteLine("Data de fim da Tarefa: " + t.dataFim);
+                Console.WriteLine("Estado da tarefa: " + t.estado);
+
+            }
+        }
     }
 }

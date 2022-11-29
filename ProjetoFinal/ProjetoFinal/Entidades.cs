@@ -11,6 +11,7 @@ namespace ProjetoFinal
 
         public void Menu1()
         {
+            Console.Clear();
             Console.WriteLine("-----------------Menu--------------------");
             Console.WriteLine("| 1 - Adicionar ou Remover registos     |");
             Console.WriteLine("| 2 - Editar projetos, equipas, tarefas |");

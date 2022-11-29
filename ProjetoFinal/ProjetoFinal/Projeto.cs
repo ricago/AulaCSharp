@@ -10,38 +10,41 @@ namespace ProjetoFinal
     {
         //variaveis
         public static Guid idProjeto { get; set; }
-        Equipa idEquipa;
+        public string IdEquipa;
         public string nome;
-        public string listaTarefas;
+        public string IdProjeto;
+        public List<Tarefas> ListaT = new List<Tarefas> { };
 
         //construtor guid
         public Projeto()
         {
             idProjeto = Guid.NewGuid();
         }
-        
+
         //função add
         public static List<Projeto> adicionaRegistoProjeto()
         {
             try
             {
+                //poo
                 Projeto projeto = new Projeto();
 
+                // Conversão de Guid para string
+                projeto.IdProjeto = idProjeto.ToString();
+
+                //adicionar guid de fora
+                projeto.IdEquipa = Equipa.idEquipa.ToString();
+
+                //Nome do Projeto
                 Console.WriteLine("Digite o nome do projeto");
                 projeto.nome = Console.ReadLine();
 
-                Console.WriteLine("Digite a lista de tarefas");
-                //Program.listaProjeto.AddRange(Program.listaTarefa); //to do
-                //projeto.listaTarefas = Console.ReadLine();
+                //adicionar a lista de tarefas a lista de projeto
+                Console.WriteLine("Adicionando a lista de tarefas");
 
-                foreach (Projeto p in Program.listaProjeto)
-                {
-                    Console.WriteLine("Id do projeto: "+Projeto.idProjeto);
-                    Console.WriteLine("Id da equipa: "+p.idEquipa);
-                    Console.WriteLine("Nome do projeto: "+p.nome);
-                    Console.WriteLine("Lista de Tarefas"+p.listaTarefas);
+                //"clonar" a lista
+                projeto.ListaT = Program.listaTarefa;
 
-                }
             }
             catch (Exception e)
             {
@@ -52,25 +55,42 @@ namespace ProjetoFinal
 
 
         //função remove
-        public static List<Projeto> removeregistoProjeto()
+        public static void removeregistoProjeto()
         {
+            Console.WriteLine("Digite o ID que deseja eliminar: ");
+            string procuraId = Console.ReadLine();
+
+            //percorre a lista
+            for (int i = 0; i < Program.listaProjeto.Count; i++)
+            {
+                //verifica se o id é igual ao inserido
+                if (Program.listaProjeto[i].IdProjeto == procuraId)
+                {
+                    //elimina
+                    Program.listaProjeto.Remove(Program.listaProjeto[i]);
+                }
+            }
+        }
+
+        public static void imprimirRelatorioProj()
+        {
+            //poo
             Projeto projeto = new Projeto();
 
-            /* Console.WriteLine("Digite o ID que deseja eliminar: ");
-            Guid procuraId = Guid.Parse(Console.ReadLine());
-
-           for(int i =0; i < Program.listaProjeto.Count; i++) // to do
+            //imprimir
+            foreach (Projeto p in Program.listaProjeto)
             {
-                if (Program.listaProjeto[i].)
+                Console.WriteLine("Id do projeto: " + p.IdProjeto);
+                Console.WriteLine("Id da equipa: " + p.IdEquipa);
+                Console.WriteLine("Nome do projeto: " + p.nome);
+                Console.WriteLine("Lista de Tarefas");
+
+                foreach (Tarefas tarefa in projeto.ListaT)
                 {
-
+                    Console.WriteLine("Id da tarefa: " + tarefa.IdTarefa);
+                    Console.WriteLine("Estado da tarefa: " + tarefa.estado);
                 }
-            }*/
-           
-
-            Program.listaProjeto.Remove(projeto);
-
-            return Program.listaProjeto;
+            }
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {}
+    "C:\\Users\\rhenriques\\Desktop\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {
+    "C:\\Users\\rhenriques\\Desktop\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\rhenriques\\Desktop\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
         "projectName": "ProjetoFinal",
-        "projectPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ricardo\\Desktop\\escola\\C#\\ProjetoFinal\\ProjetoFinal\\obj\\",
+        "projectPath": "C:\\Users\\rhenriques\\Desktop\\C#\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
+        "packagesPath": "C:\\Users\\rhenriques\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rhenriques\\Desktop\\C#\\ProjetoFinal\\ProjetoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rhenriques\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
